@@ -11,10 +11,14 @@ if (!gamestart){
         $("h1").text("Level: "+lvl);
         gamestart =true;
         
+        gamestart1();
+    })
+
+    $("#start1").click(function(){
+        $("h1").text("Level: "+lvl);
+        gamestart =true;
         
         gamestart1();
-        
-
     })
 }
 
@@ -86,21 +90,6 @@ function gamover_anim(){
 
 
 
-
-
-// $(".btn").on("click",function (){
-//     console.log($(this).attr("id"));
-//     clickval =$(this).attr("id");
-//     // var button =this;
-//     playsound(clickval);
-//     press(clickval);  // press(this);
-
-//     setTimeout(function(){
-//         randomkeygen();
-//     },2000);
-    
-// })
-
 function playsound(key){
     var audio =new Audio("./sounds/"+ key + ".mp3");
     audio.play();
@@ -131,3 +120,21 @@ function randomkeygen(){
     console.log("patter: "+seqlog);   //may remove
 
 }
+
+
+
+
+
+
+// $(".btn").on("click",function (){
+//     console.log($(this).attr("id"));
+//     clickval =$(this).attr("id");
+//     // var button =this;
+//     playsound(clickval);
+//     press(clickval);  // press(this);
+
+//     setTimeout(function(){
+//         randomkeygen();
+//     },2000);
+    
+// })
